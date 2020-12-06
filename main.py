@@ -1,16 +1,27 @@
-# This is a sample Python script.
+from classes.Exercise import Exercise
+from classes.Session import Session
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+exercises = []
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+pystypunnerrus = 'pystypunnerrus'
+paino = 77.5
+toistot = 3
+sarjoja = 1
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+pystypunnerrus = Exercise(pystypunnerrus, paino, sarjoja, toistot)
+penkkipunnerrus = Exercise('penkkipunnerrus', 97.5, 5, 5)
+
+exercises.append(pystypunnerrus)
+exercises.append(penkkipunnerrus)
+
+
+trainingSession = Session(date='6.12.2020', name='Sunday squat session', exercises=exercises, duration=1.30)
+
+
+trainingSession.get_session_information()
+
+
+
+#if __name__ == '__main__':
+#   main()

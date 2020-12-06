@@ -1,5 +1,4 @@
-
-class Movement:
+class Exercise():
 
     def __init__(self, name, weight, sets, repetitions):
         self.name = name
@@ -31,5 +30,18 @@ class Movement:
     def set_repetitions(self, repetitions):
         self.repetitions = repetitions
 
-    def print_movement_information(self):
-        return {'name': self.name, 'weight': self.weight, 'sets': self.sets, 'repetitions': self.repetitions}
+    def get_exercise_information(self):
+        return {'Exercise': self.name, 'weight': self.weight, 'sets': self.sets, 'repetitions': self.repetitions}
+
+    def get_volume(self):
+        sets = self.get_sets()
+        repetitions = self.get_repetitions()
+
+        return sets * repetitions
+
+    def get_tonnage(self):
+        sets = self.get_sets()
+        repetitions = self.get_repetitions()
+        weight = self.get_weight()
+
+        return weight * repetitions * sets
