@@ -1,9 +1,9 @@
-class Exercise():
+class Exercise:
 
-    def __init__(self, name, weight, sets, repetitions):
+    def __init__(self, name, weight, work_sets, repetitions):
         self.name = name
         self.weight = weight
-        self.sets = sets
+        self.work_sets = work_sets
         self.repetitions = repetitions
 
     def set_name(self, name):
@@ -19,10 +19,10 @@ class Exercise():
         return self.weight
 
     def get_sets(self):
-        return self.sets
+        return self.work_sets
 
     def set_sets(self, sets):
-        self.sets = sets
+        self.work_sets = sets
 
     def get_repetitions(self):
         return self.repetitions
@@ -30,8 +30,8 @@ class Exercise():
     def set_repetitions(self, repetitions):
         self.repetitions = repetitions
 
-    def get_exercise_information(self):
-        return {'Exercise': self.name, 'weight': self.weight, 'sets': self.sets, 'repetitions': self.repetitions}
+    def get_info(self):
+        return {'Exercise': self.name, 'weight': self.weight, 'sets': self.work_sets, 'repetitions': self.repetitions}
 
     def get_volume(self):
         sets = self.get_sets()
