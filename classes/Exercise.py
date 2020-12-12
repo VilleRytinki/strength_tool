@@ -1,10 +1,21 @@
 class Exercise:
 
-    def __init__(self, name, weight, work_sets, repetitions):
+    def __init__(self, id, name, weight, work_sets, repetitions):
+        self.id = id
         self.name = name
         self.weight = weight
         self.work_sets = work_sets
         self.repetitions = repetitions
+        self.volume
+        self.tonnage
+        self.intensity
+        self.session_date
+
+    def set_id(self, id):
+        self.id = id
+
+    def get_id(self):
+        return self.id
 
     def set_name(self, name):
         self.name = name

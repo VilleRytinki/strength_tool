@@ -6,8 +6,10 @@ class Session:
     def __init__(self, date, name, exercises, duration):
         self.date = date
         self.name = name
-        self.exercises = exercises
+        self.exercises = []
         self.duration = duration
+        self.total_volume
+        self.total_tonnage
 
     def set_date(self, date):
         self.date = date

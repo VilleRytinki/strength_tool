@@ -1,10 +1,16 @@
 class Trainee:
 
     def __init__(self, name, height, weight):
+        self.id
         self.name = name
         self.height = height
         self.weight = weight
-        self.training_log = []
+        self.training_log
+        self.sq_pr
+        self.dl_pr
+        self.bb_pr
+        self.p_pr
+
 
     def set_name(self, name):
         self.name = name
